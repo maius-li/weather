@@ -1,0 +1,15 @@
+.search-bar {
+    width: 50%;
+    background: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 35px 0 rgba(154,161,171,.15);
+    margin-bottom: 30px;
+    input {
+      width: auto;
+      margin-right: 5px;
+    }
+    .ant-select.ant-select-enabled {
+      margin: 5px 5px 5px 0;
+    }
+}

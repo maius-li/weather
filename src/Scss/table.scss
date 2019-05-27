@@ -1,0 +1,27 @@
+table {
+    width: 50%;
+    border-collapse: collapse;
+    color: #404040;
+    i {
+      font-size: 18px;
+      margin: 0 10px;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.4);
+        transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+      }
+    }
+  }
+  
+  table,td,th {
+    border: 1px solid #D2D5DA;
+    text-align: center;
+  }
+  
+  th,tr:hover {
+    background-color:#F4F5F9;
+  }
+  
+  td,th {
+    padding: 20px 5px;
+  }
