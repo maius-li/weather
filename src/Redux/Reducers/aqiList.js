@@ -1,6 +1,6 @@
 import { SET_AQI_LIST } from "../Actions/actionTypes";
 
-const aqi = (state = {
+const aqiList = (state = {
     aqiList: []
 }, action) => {
     switch (action.type) {
@@ -14,4 +14,4 @@ const aqi = (state = {
     }
 }
 
-export default aqi;
+export default aqiList;

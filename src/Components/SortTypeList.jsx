@@ -20,11 +20,11 @@ class SortTypeList extends Component {
         return (
             <Select
                 showSearch
-                allowClear={true}
-                style={{ width: '50%' }}
+                allowClear={false}
+                style={{ width: '40%', float: 'left', marginLeft: '5%' }}
+                placeholder="排序"
                 defaultValue={null}
                 disabled={currentCounty === ''}
-                placeholder="請選擇排序"
                 optionFilterProp="children"
                 onChange={this.handleChange}
                 filterOption={(input, option) => option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}

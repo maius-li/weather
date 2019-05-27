@@ -6,7 +6,8 @@ import { setCurrentCounty } from '../Redux/Actions/searchBar';
 class CountyList extends Component {
 
     handleChange = (value) => {
-        this.props.dispatch(setCurrentCounty(value));
+        const val = !value ? '' : value;
+        this.props.dispatch(setCurrentCounty(val));
     }
 
     render() {
@@ -40,9 +41,9 @@ class CountyList extends Component {
             <Select
                 showSearch
                 allowClear={true}
-                style={{ width: '50%' }}
+                style={{ width: '40%', float: 'left', marginRight: '5%' }}
+                placeholder="城市"
                 defaultValue=""
-                placeholder="請選擇城市"
                 optionFilterProp="children"
                 onChange={this.handleChange}
                 filterOption={(input, option) => option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
